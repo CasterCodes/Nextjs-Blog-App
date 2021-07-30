@@ -1,13 +1,15 @@
-import React from 'react';
-import articleStyles from '../styles/Article.module.css'
-import ArticleItem from '../components/ArticleItem'
+import React from "react";
+import articleStyles from "../styles/Article.module.css";
+import ArticleItem from "../components/ArticleItem";
 
-const ArticleList = ({articles}) => {
-    return (
-        <div className={articleStyles.grid}>
-             {articles.map(article => <ArticleItem key={article.id} article={article}/>)}
-        </div>
-    )
-}
+const ArticleList = ({ articles }) => {
+  return (
+    <div className={articleStyles.grid}>
+      {articles.map((article) => (
+        <ArticleItem key={article.id} article={article} />
+      ))}
+    </div>
+  );
+};
 
-export default ArticleList
+export default ArticleList;
